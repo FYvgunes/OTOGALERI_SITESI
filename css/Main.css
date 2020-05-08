@@ -1,0 +1,813 @@
+/*Genrala settint*/
+
+@font-face{
+    font-family:'Raleway';
+    src:url('../fonts/Raleway-Regular.ttf');
+}
+
+body{
+    background:#fff;
+   color: #3f3f3;
+    font: 14px- 28px;
+    font-family: 'Raleway', arial;
+    
+}
+.sectionArea{
+    padding: 80px 0;
+}
+.sectionHeader{
+    background: #500d16;
+    display: inline-block;
+    color: #fff;
+    height: 60px;
+    line-height: 60px;
+    font-size: 40px;
+    padding: 5px 40px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+h1{
+    font-size: 52px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+h3{
+    font-size: 15px;
+    color: #500d16;
+    font-weight: 700px;
+   
+   
+    transition: all .4s ease;
+    
+}
+.container
+{
+    display: flex;
+    width:90%;
+    margin: 0 auto;
+}
+.sectionArea
+{
+    padding: 80px 0;
+}
+.featuresBody .container,.engineBody .container{
+    justify-content: space-between;
+    
+}
+.col3{
+    flex-grow: 1;
+    width: 33.33%;
+}
+.col2
+{
+    flex-grow: 1;
+    width: 50%;
+    padding: 20px;
+}
+
+
+/*HOME SETTİNG */
+
+header .logo{
+    margin-right: auto;
+}
+header .logo img{
+    display: block;
+    height: 70px;
+}
+.menu li{
+    float: left;
+}
+.menu li a{
+    padding: 27px 27px;
+    display: block;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #333;
+    transition: all .5s ease;
+}
+.menu li:hover a{
+    background: #500D16;
+    color: #fff;
+}
+.slider
+{
+    width: 100%;
+}
+#mainSlider 
+{
+    height: 500px;
+    background:url('/OtoGaleri/img/mainHome.jpg') center center no-repeat;
+}
+#mainCaption{
+    height: 500px;
+    background: rgba(0,0,0, .5);
+}
+.caption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+}
+
+
+.featuresTop{
+    text-align: center;
+}
+.item{
+    padding: 10px 20px;
+}
+.zoom{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    vertical-align: top;
+    display: inline-block;
+}
+.zoom{
+    display: block;
+}
+.zoom img{
+    display: block;
+    width: 100%;
+    height:200px;
+    transition: all .4s ease;
+}
+.itemtext p{
+    margin: 25px 0;
+}
+.item .itemtext{
+    text-align: center;
+    padding:10px;
+    
+    border: 1px solid #500d16;
+}
+.item:hover .zoom img{
+    transform: scale(1.25);
+}
+
+.item:hover h3{
+    color: #fff;
+}
+.item:hover .itemtext{
+    background: #500d16;
+    color: #fff;
+    transition: all .4s ease;
+}
+
+.btndetails{
+    color: #500d16;
+    padding:5px 10px;
+    border: 1px solid #500d16;
+    text-decoration: none;
+
+    
+   
+}.item:hover .btndetails{
+    background: :#500d16;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+#parallax
+{
+    background: linear-gradient(
+    rgba(0,0,0, .7),
+    rgba(0,0,0,.7)
+    ),
+    url('/OtoGaleri/img/menu.jpg');
+   
+   
+    
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+}
+#parallax p{
+    color: #fff;
+}
+.engineTop{
+    text-align: center;
+}
+
+.engineContainer{
+    position: relative;
+    width: 100%;
+    
+}
+.imageOver
+{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.engineOverlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(80,13,22, .7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.engineContainer:hover .engineOverlay{
+    width: 100%;
+}
+
+.enginetext{
+    white-space: nowrap;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.engineOverlay2{
+     position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: ;
+    background: rgba(80,13,22, .7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+.engineContainer:hover .engineOverlay2{
+    width: 100%;
+    left: 0;
+}
+
+footer{
+    background: #500d16;
+    text-align: center;
+}
+.footeritem{
+    padding: 20px;
+}
+.footeritem img{
+    height: 50px;
+    opacity: .5;
+}
+footer .fab{
+    font-size: 30px;
+    color: #95a5a6;
+    line-height: 50px;
+    transition: .3s ease;
+}
+footer .fab:hover{
+    color: #fff;
+}
+footer h3{
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+footer p{
+    color:#95a5a6;
+    line-height: 1.15;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+
+.FooterLinks a{
+    text-decoration: none;
+    color: #95a5a6;
+    letter-spacing: 2px;
+    transition: .3s ease;
+    font-size: 23px;
+    line-height: 1.5;
+}
+.FooterLinks a:hover
+{
+    color: #fff;
+    text-decoration: underline;
+}
+.socialLinks li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+
+/*CARS PAGE*/
+#carsSlider 
+{
+    height: 250px;
+    background:url('/OtoGaleri/img/joey-banks-YApiWyp0lqo-unsplash.jpg') center center no-repeat;
+}
+#carsCaption{
+    height: 250px;
+    background: rgba(0,0,0, .5);
+}
+#inspect{
+    background-color: #f5f5f5;
+}
+
+.inspeckTop{
+    text-align: center;
+}
+.inspectBody .col2{
+    display: flex;
+}
+.inspectimage{
+    width: 40%;
+    
+}
+.inspectimage img{
+    width: 100%;
+    height: 135px;;
+}
+.inspeckText{
+    width: 60%;
+    padding-left: 10px;
+    padding-bottom:5px;
+    line-height: 1.2;
+}
+.date{
+    color: #333;
+    font-style: italic;
+    font-size: 12px;
+}
+h4{
+    color: #500d16;
+    font-size: 14px;
+    font-weight: bold;
+}
+.inspeckText a
+{
+    float: right;
+    text-decoration: none;
+    color: #500d16;
+    
+}
+.inspeckText a:hover{
+    text-decoration: underline;
+    color: brown;
+}
+.projectsXTop{
+    text-align: center;
+    
+}
+#projectsX .containerFluid{
+    height: 500px;
+    
+    background:url('/OtoGaleri/img/car1.jpg') center center no-repeat;
+    background-size: cover;
+}
+.captionPX{
+    display: flex;
+    background: rgba(0,0,0, .8);
+    width: 100%;
+    height: 500px;
+}
+.projectXinfo{
+    position: relative;
+    margin-left: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50% );
+        
+}
+.projectBTN{
+    background: #500d16;
+    color: #fff;
+    padding: 20px 40px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.projectBTN:hover{
+    background: #fff;
+    color: #500d16;
+    
+}
+
+.ProjectText{
+    color: #fff;
+    line-height: 2;
+}
+.projectsTitle{
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: 2px;
+    color: brown;
+}
+.projectXHighlisght{
+    display: inline-block;
+     background: #500d16;
+    padding: 25px;
+    color: #fff;
+    line-height: 23px;
+    letter-spacing: 1px;
+    
+}
+.containerFluid .col2{
+    padding: 0;
+}
+
+
+/*ABOUNT CSS*/
+ 
+
+#aboutSlider 
+{
+    height: 250px;
+    background:url('/OtoGaleri/img/ceo2.jpg') center center no-repeat;
+    background-size: cover;
+}
+#aboutCaption{
+    height: 250px;
+    background: rgba(0,0,0, .5);
+}
+.ourhistory{
+    background: #f5f5f5;
+    
+}
+.ourhistoryTop{
+    text-align: center;
+}
+.ourhistoryBody .containerfluid{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.ourhistoryBody .col2{
+    display: flex;
+}
+.ourhistorydate 
+{
+    flex: 1;
+    text-align: center;
+    background: #500d16;
+    color: #fff;
+    
+}
+.ourhistorydate p{
+    font-size: 30px;
+    letter-spacing: 2px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.ourhistoryimage{
+    flex: 2;
+}
+.ourhistoryimage img{
+    width: 100%;
+    height: 100%;
+}
+.ourhistorytext{
+    flex: 3;
+    margin-left: 10px;
+}
+.ourhistorytext p{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.teamTop{
+    text-align: center;
+}
+
+.teambody .containerfluid{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.teamMember{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.teamMemberImg{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.teamMemberOverlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    background: #500d16;
+    transition: .5s ease;
+}
+.teamMember:hover .teamMemberOverlay{
+    opacity: 0;
+}
+.teamMember:hover .teammenberInfo{
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.teammenberInfo{
+    color: #fff;
+    background: rgba(80,13,22,.8);
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: .5s ease;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.2;
+}
+.teamtitle{
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.menbersocialLinks{
+    text-align: center;
+}
+.menbersocialLinks li{
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.menbersocialLinks .fab{
+    color: #fff;
+}
+
+/*OCNTACK*/
+
+
+#contactSlider 
+{
+    height: 250px;
+    background:url('/OtoGaleri/img/contact-us-1.jpg') center center no-repeat;
+    background-size: cover;
+}
+#contactCaption{
+    height: 250px;
+    background: rgba(0,0,0, .5);
+}
+
+.galleryTop{
+    text-align: center;
+}
+.gallerySlider{
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+.galleryslideritem{
+    width: 300%;
+    margin-top: 10px;
+    position: relative;
+    left: 0;
+    animation: sliderAnimation 30s infinite;
+}
+.galleryslideritem img{
+    width: 33.33%;
+    float: left;
+    height: 600px;
+}
+@keyframes sliderAnimation{
+    0%{left:0;}
+    25%{left: -100%;}
+    50%{left: -200%;}
+    75%{left: -100%;}
+    100%{left: 0;}
+}
+.contactTop{
+    text-align: center;
+}
+.wrapper{
+    margin:  0 auto;
+    width: 60%;
+}
+.contactFrom{
+    margin: 0 auto;
+    width: 100%;
+}
+.fromitem{
+    margin-bottom: 10px;
+    width: 100%;
+}
+.fromshape{
+    color: #fff;
+    float: left;
+    background: #500d16;
+    padding: 8px;
+    width: 8%;
+    text-align: center;
+    
+}
+.formfield{
+    color: #fff;
+    background: #500d16;
+    border: none;
+    padding: 15.5px;
+    width: 92%;
+    display: block;
+    font-size: 14px;
+}
+.formbtn{
+ display: block;
+    border:none;
+    background: #500d16;
+    color: #fff;
+    padding: 12px 25px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .5s ease;
+    
+}
+.formbtn:hover{
+    color: #500d16;
+    background: #f5f5f5;
+}
+@media screen and (max-width:960px){
+    .caption h1{
+        color: #f5f5f5;
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+    footer .fas{
+        font-size: 24px;
+    }
+    footer h3{
+        font-size: 16px;
+    }
+    .inspectBody .container{
+        flex-direction: column;
+    }
+    .inspectBody .container .col2{
+        width: 100%;
+    }
+    .ourhistoryBody .col2{
+        flex-direction: column;
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+ 
+@media screen and (max-width:720px){
+    header .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header .logo{
+        margin:  0 auto;
+    }
+    .caption h1{
+        color: #500d16;
+        font-size: 28px;
+        letter-spacing: 2px;
+    
+    }
+    .sectionArea h2{
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+    .featuresBody .container{
+        flex-direction: column;
+    }
+    .featuresBody .container .col3{
+     width: 80%;
+     margin: 0 auto;
+    }
+    .engineBody .container{
+        flex-direction: column;
+    }
+    .engineBody .container .col2{
+        width: 80%;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .col3{
+        width: 80%;
+        margin:  0 auto;
+    }
+    .teammenberInfo{
+        font-size: 14px;
+        padding: 10px;
+    } 
+    .teamtitle{
+        font-size: 14px;
+    }
+    .fromshape{
+        display: none;
+    }
+    .galleryslideritem img{
+        height: 450px;
+    }
+    
+    
+}
+@media screen and (max-width:540px){
+     .caption h1{
+        color: #500d16;
+        font-size: 20px;
+        letter-spacing: 2px;
+    
+    }
+    .sectionArea h2{
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    .featuresBody .container .col3{
+     width: 100%;
+     margin: 0 auto;
+    }
+     .engineBody .container .col2{
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+    .sectionHeader{
+        font-size: 20px;
+    }
+    .contactFrom{
+        width: 100%;
+    }
+    .galleryslideritem img{
+        height: 250px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
